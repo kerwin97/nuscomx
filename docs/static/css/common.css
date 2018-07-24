@@ -52,3 +52,58 @@ header .navigation a:hover {
   color: #222288;
   text-decoration: underline;
 }
+
+footer {
+  background-color: #000000;
+  color: #ffffff;
+  padding: 1rem;
+  text-align: center;
+}
+
+footer .citation {
+  font-size: 0.8rem;
+}
+
+footer .citation a {
+  color: #ffffff;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+footer .citation a:hover {
+  color: #dddddd;
+}
+
+footer .social-links {
+  margin-bottom: 0.5rem;
+}
+
+footer .social-links .social-link {
+  display: inline-block;
+  margin: 0 0.8rem;
+  position: relative;
+}
+
+footer .social-links .social-link a {
+  color: #ffffff;
+}
+
+footer .social-links .social-link a:hover {
+  color: #dddddd;
+}
+
+footer .social-links .social-link .tooltip {
+  background-color: #000000;
+  color: #dddddd;
+  font-size: 1rem;
+  font-weight: 700;
+  left: -2.5rem;
+  position: absolute;
+  top: -2.5rem;
+  visibility: hidden;
+  width: 6rem;
+}
+
+footer .social-links .social-link:hover .tooltip {
+  visibility: visible;
+}
