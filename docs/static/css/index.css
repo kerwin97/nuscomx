@@ -1,0 +1,69 @@
+.container-events {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.container-events .event {
+  background-color: #ffffff;
+  color: #000000;
+  cursor: pointer;
+  margin: 0 0.5rem 1rem 0.5rem;
+  width: 15rem;
+}
+
+.container-events .event:hover {
+  background-color: #222222;
+  color: #eeeeee;
+}
+
+.container-events .event img {
+  display: block;
+  height: 10rem;
+  object-fit: cover;
+}
+
+.container-events .event .description {
+  padding: 1rem;
+}
+
+.container-events .event .description h1 {
+  font-size: 1rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.container-events .event .description h2 {
+  font-size: 0.8rem;
+  font-weight: 400;
+  margin-bottom: 0.1rem;
+}
+
+.container-events .event .description p {
+  font-weight: 300;
+  font-size: 0.8rem;
+  margin-top: 0.3rem;
+}
+
+.hero {
+  background-image: url("../images/index/elections.jpg");
+  background-position: 65%;
+}
+
+.modal {
+  align-items: center;
+  background-color: #222222dd;
+  cursor: pointer;
+  display: none;
+  height: 100%;
+  justify-content: center;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.modal img {
+  max-height: 95%;
+  max-width: 95%;
+}

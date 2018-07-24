@@ -107,3 +107,78 @@ footer .social-links .social-link .tooltip {
 footer .social-links .social-link:hover .tooltip {
   visibility: visible;
 }
+
+.heading {
+  padding: 3rem 2rem;
+  text-align: center;
+}
+
+@media (min-width: 480px) {
+  .heading {
+    margin: 0 auto;
+    width: 30rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .heading {
+    width: 48rem;
+  }
+}
+
+.heading h1 {
+  font-family: "Oswald", sans-serif;
+  font-size: 1.8rem;
+}
+
+.heading p {
+  font-weight: 300;
+  margin-top: 0.8rem;
+}
+
+.hero {
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 15rem 1rem 1rem 1rem;
+}
+
+.hero .description {
+  background: #ffffffcc;
+  padding: 2rem;
+}
+
+@media (min-width: 480px) {
+  .hero .description {
+    width: 80%;
+  }
+}
+
+@media (min-width: 768px) {
+  .hero .description {
+    width: 60%;
+  }
+}
+
+.hero .description a {
+  background-color: #009999;
+  color: #ffffff;
+  display: inline-block;
+  font-weight: 700;
+  margin-top: 1.5rem;
+  padding: 1rem;
+  text-decoration: none;
+}
+
+.hero .description a:hover {
+  background-color: #006666;
+}
+
+.hero .description h1 {
+  font-family: "Oswald", sans-serif;
+  font-size: 1.8rem;
+}
+
+.hero .description p {
+  font-weight: 300;
+  margin-top: 0.8rem;
+}
