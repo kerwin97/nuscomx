@@ -1,0 +1,13 @@
+.hero {
+  margin-bottom: 1rem;
+}
+
+.hero-club {
+  background-image: url("../images/about/club.jpg");
+  background-position: center center;
+}
+
+.hero-mc {
+  background-image: url("../images/about/mc.jpg");
+  background-position: center 80%;
+}

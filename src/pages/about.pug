@@ -1,0 +1,23 @@
+extends ../templates/base.pug
+
+block head
+  link(rel="stylesheet", href=`${baseUrl}/static/css/about.css`)
+
+block main
+  .hero.hero-club
+    .description
+      h1 NUS Students' Computing Club
+      p.
+        The NUS Students’ Computing Club, colloquially referred to as the Computing Club, is a
+        constituent club under the NUS Students’ Union (NUSSU). It comprises and represents all
+        undergraduates pursuing a degree in NUS School of Computing.
+      a(href=`${baseUrl}/about/club.html`) Learn more
+  .hero.hero-mc
+    .description
+      h1 20th Management Committee
+      p.
+        Throughout a typical academic year, we organize various events for our members. We have
+        Freshmen Orientation Programmes specially designed to integrate the incoming freshmen into
+        NUS, collaborative projects with our professors to provide additional assistance to weaker
+        students, celebrations for graduating students, and many more events!
+      a(href=`${baseUrl}/about/mc.html`) Learn more
