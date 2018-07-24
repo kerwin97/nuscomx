@@ -2,10 +2,16 @@
   "name": "nuscomx",
   "version": "1.0.0",
   "description": "Official site for NUS Students' Computing Club",
+  "scripts": {
+    "build": "pug src/pages --obj pug.json --out docs"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/nuscomputingdev/nuscomx"
   },
   "author": "Eugene Lim",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "pug-cli": "^1.0.0-alpha6"
+  }
 }
