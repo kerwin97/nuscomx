@@ -1,0 +1,208 @@
+extends ../../templates/base.pug
+
+mixin member(name, wing, role)
+  .member
+    - const imageName = name.toLowerCase().replace(/ /g,"_")
+    img(src=`${baseUrl}/static/images/about/mc/individual/${imageName}.jpg`, alt="")
+    .description
+      h1 #{name}
+      h2 #{wing}
+      h3 #{role}
+
+block head
+  link(rel="stylesheet", href=`${baseUrl}/static/css/about/mc.css`)
+
+block main
+  .banner
+    img(src=`${baseUrl}/static/images/about/mc/group/all.jpg`, alt="")
+  .heading
+    h1 20th Management Committee
+    p.
+      Throughout a typical academic year, we organize various events for our members. We have
+      Freshmen Orientation Programmes specially designed to integrate the incoming freshmen into
+      NUS, collaborative projects with our professors to provide additional assistance to weaker
+      students, celebrations for graduating students, and many more events!
+  .container-wings
+    .wing
+      img(src=`${baseUrl}/static/images/about/mc/group/presidential_wing.jpg`, alt="")
+      .description
+        h1 Presidential Wing
+        p.
+          The Presidential Wing, which consist of the President, the Secretariat Cell, the Finance
+          Cell, and the IT Cell, takes charge of the general administration and support of the club.
+          They provide guidance and aid to the operational cells in their respective fields, and
+          frequently undertake actions that affect the entire club.
+        h2 Presidential Cell
+        p.
+          The President, together with the Vice-Presidents, makes top level decisions that concerns
+          the direction of the club, ensures the smooth running of events, and provides guidance to
+          the cells. He also represents the club in the NUSSU Council, meetings with the School and
+          University, and official events. In the process, he acts as the voice for the club and the
+          students and safeguards their interests.
+        h2 Secretariat Cell
+        p.
+          The Secretariat Cell takes charge of the overall administration of the club to ensure a
+          smooth day-to-day running of the club. This includes coordinating directors’ meetings,
+          general meetings, and enforcing that discipline within the club is upheld in accordance
+          with the club’s Rules and Regulations. The Secretariat Cell also shoulders the
+          responsibility of information management, the weekly email blasts, and the welfare of
+          and bonding between the club’s Management Committee members.
+        h2 Finance Cell
+        p. 
+          The Finance Cell manages all matters relating to finance and expenses in the club.
+          Together with the President, they allocate the initial budget at the start of their term,
+          and all purchases within the club will have to be approved by them. The Finance Cell work
+          closely with School of Computing’s Student Life Office and NUS Office of Financial
+          Services to properly process all transactions, sets out proper financial guidelines and
+          procedures, and frequently provide financial advice to club members that contributes to a
+          smooth running of the club’s operations.
+        h2 Information Technology Cell
+        p. 
+          The Information Technology (IT) Cell oversees the IT infrastructure of the club. This
+          includes the club’s official website, the Freshmen Orientation Programme (FOP) webpage,
+          and even various ad hoc projects such as the creation of Telegram Bots to cater to
+          orientation camps score keeping needs. Further, the IT Cell also has the responsibility to
+          determine the optimal hosting servers, ensure the themes of the club’s various IT
+          infrastructure upholds the club’s image, and keep them user friendly, informative, and
+          up-to-date.
+    .wing
+      img(src=`${baseUrl}/static/images/about/mc/group/student_life.jpg`, alt="")
+      .description
+        h1 Student Life
+        p.
+          Student Life Wing consists of two cells: Freshmen Orientation Projects (FOP) and Student
+          Relations.
+        h2 Freshmen Orientation Project Cell
+        p.
+          The FOP cell supports and integrates the different orientation projects: Freshmen Social
+          Camp (FSC), RAG Exposure Program (REP), RAG Commencement, Freshmen Orientation Week (FOW),
+          Orientation Day (ODay) and BASH. FOP 2018 has a vision of "One FOP", which means
+          supporting the different projects and aligning each project to a common vision &mdash;
+          creating a memorable experience for freshmen and seniors.  
+        h2 Student Relations Cell
+        p.
+          The Student Relations cell supports the feedback channels, ensuring that feedback are
+          taken care of, as well as the lockers in NUS School of Computing. Student Relations
+          collect feedback through surveys, and analyse the survey to find ways to improve the club.
+    .wing
+      img(src=`${baseUrl}/static/images/about/mc/group/student_development.jpg`, alt="")
+      .description
+        h1 Student Development
+        p.
+          The Student Development Wing comprises of the Academic Liaison and the Community Service
+          Cell. The main purpose of this wing is to help students develop both academically, as well
+          as, mentally and emotionally.
+        h2 Academic Liaison Cell
+        p.
+          The Academic Liaison cell aims to promote the academic interests and facilitate the
+          academic pursuits of the members of the Club. It also functions as the bridge between the
+          student population and the school with regards to academic matters. With a focus on
+          academics, the Academic Liaison cell plans activities, such as mock Practical Exams,
+          Academic Day, and hackathons. 
+        h2 Community Service Cell
+        p. 
+          A relatively new cell, the Community Service cell aims to promote a culture of giving
+          among computing students. It also aims to provide a platform for computing students to
+          give back to society. The current projects that we have are mainly centered around, Flag,
+          such as fundraising events, beneficiary engagement days, and the actual Flag Day itself.
+          Apart from that, we are also working closely with the school on Code for Community.
+          Furthermore, we will be introducing a new community service page where interested students
+          can pitch their ideas to us or volunteer for projects. 
+    .wing
+      img(src=`${baseUrl}/static/images/about/mc/group/external_relations.jpg`, alt="")
+      .description
+        h1 External Relations
+        p.
+          The External Wing comprises the Marketing and Publicity cells of the Computing Club.
+          Together, we support the Club and raise its awareness to the students through various
+          ways, from sponsorship sourcing to event publicity.
+        h2 Publicity Cell
+        p.
+          Welcome to Publicity cell! Interested to curate content (such as posters) seen by the
+          entire Computing faculty? Curious about photography or videography but never got the
+          chance to try it out? As a supportive cell for the various other departments, we are often
+          given the opportunity to contribute to many great events organised by Computing Club for
+          your fellow Computing students!
+        p.
+          Home to many great avenues for social media, we manage a large portion of Computing Club’s
+          forefront content, such as our
+          #[a(href="https://tiny.cc/socflickr") Flickr page],
+          #[a(href="https://facebook.com/nuscomputing") Facebook page],
+          #[a(href="https://instagram.com/nuscomputingclub") Instagram page], and
+          #[a(href="https://t.me/nuscomputingclub") Telegram channel]. 
+        p.
+          Additionally, we are always on the lookout for student volunteers to help us with the
+          promotion of Club events, as well as providing media coverage during the actual events
+          themselves. You will become part of a tightly-knit community of like-minded students with
+          various skill levels, here to learn and have fun with curating content for student body.
+        h2 Marketing Cell
+        p.
+          In order to support the Club’s various events which require substantial financial support,
+          ranging from the Exam Welfare Pack to the Freshmen Orientation Projects, we conduct
+          fundraising sales regularly during events such as Computing Day. We offer a range of
+          Computing Club merchandise, such as our NUS Computing varsity shirt (in various colours),
+          SoC 20th anniversary shirt, the SoCCat nanoblock, and more.
+        p.
+          We are always on the lookout for student volunteers to help us with the design and sales
+          of Computing Club merchandise, as well as liaising with various organizations with regards
+          to sponsorship of Club events! You will play a crucial role in helping the Club to grow
+          from strength to strength, through strong branding and fundraising!
+    .wing
+      img(src=`${baseUrl}/static/images/about/mc/group/internal_wing.jpg`, alt="")
+      .description
+        h1 Internal Wing
+        p.
+          The Internal Wing comprises the Sports Cell and the Welfare Cell, and headed by the
+          Vice-President (Internal). Together, they focus on taking care of the well-being of the
+          students through various sporting and welfare events, providing reprieve to the students
+          otherwise hectic and stressful University lives.
+        h2 Sports Cell
+        p.
+          The Sports Cell manages all activities related to sports in the club. This includes
+          organising an annual Sports Camp during the holidays and various recreational sporting
+          sessions during the Semester. They also work closely with NUS Students’ Sports club to
+          coordinate the yearly Inter-Faculty Games. In the process, they bring sports to the
+          students and attempt to inculcate a sense of healthier living through sports.
+        h2 Welfare Cell
+        p.
+          The Welfare Cell aims to promote the mental well-being of the students by providing
+          avenues to have fun, bond, and relax. Some of these events include Welfare Night,
+          Halloween Night, and Graduation Night. They also oversee the iconic Exam Welfare Pack
+          giveaway once every semester.
+
+  .heading
+    h1 Our Team
+    p.
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque id
+      dui, vitae euismod sapien. Aliquam erat volutpat. Aliquam venenatis molestie
+      felis, vel venenatis odio suscipit sed.
+  .container-members
+    +member("Joel Lim", "Presidential Wing", "President")
+    +member("Joel Sim", "Student Life", "Vice President")
+    +member("Elysia Tan", "Student Development", "Vice President")
+    +member("Yeo Kian Wee", "External Relations", "Vice President")
+    +member("Amanda Tan", "Internal Wing", "Vice President")
+    +member("Tsai Yu Hsuan", "Presidential Wing", "General Secretary")
+    +member("Ng Chee Siang", "Presidential Wing", "Assistant General Secretary")
+    +member("Jason Yip", "Presidential Wing", "Finance Secretary")
+    +member("Lee Shi Ming", "Presidential Wing", "Assistant Finance Secretary")
+    +member("Eugene Lim", "Presidential Wing", "IT Secretary")
+    +member("Chng Zhi Xuan", "Presidential Wing", "Assistant IT Secretary")
+    +member("Vanessa Loh", "Student Life", "Director of Freshmen Orientation Projects")
+    +member("Francis Lee", "Student Life", "Deputy Director of Freshmen Orientation Projects")
+    +member("Lim Sing Jie", "Student Life", "Director of Student Relations")
+    +member("Jeremy Lim", "Student Life", "Deputy Director of Student Relations")
+    +member("Lee Yiyuan", "Student Development", "Director of Academic Liaison")
+    +member("Gabriel Tan", "Student Development", "Deputy Director of Academic Liaison")
+    +member("Tan Wei Li", "Student Development", "Director of Community Service")
+    +member("Zhao Jun Ru", "Student Development", "Deputy Director of Community Service")
+    +member("Lawrence Lim", "External Relations", "Director of Publicity")
+    +member("Rebecca Tan", "External Relations", "Deputy Director of Publicity")
+    +member("Gervaise Ang", "External Relations", "Director of Marketing")
+    +member("Kevin Alvarez", "External Relations", "Deputy Director of Marketing (Sponsorship)")
+    +member("Clarisse Lim", "External Relations", "Deputy Director of Marketing (Merchandise)")
+    +member("Ian Tan", "Internal Wing", "Director of Welfare")
+    +member("Low Rui Jia", "Internal Wing", "Deputy Director of Welfare")
+    +member("Shannon Kok", "Internal Wing", "Director of Sports")
+    +member("Kerwin Kow", "Internal Wing", "Deputy Directory of Sports")
+
