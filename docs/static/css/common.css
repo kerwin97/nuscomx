@@ -13,3 +13,42 @@ body {
   color: #222222;
   font-family: "Open Sans", sans-serif;
 }
+
+header {
+  align-items: center;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+}
+
+@media (min-width: 768px) {
+  header {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+}
+
+header img {
+  display: block;
+  height: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+@media (min-width: 768px) {
+  header img {
+    margin-bottom: 0;
+  }
+}
+
+header .navigation a {
+  color: #000000;
+  font-size: 0.8rem;
+  margin: 0 0.3rem;
+  text-decoration: none;
+}
+
+header .navigation a:hover {
+  color: #222288;
+  text-decoration: underline;
+}
