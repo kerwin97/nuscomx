@@ -1,0 +1,63 @@
+.container-guide {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.container-guide .guide {
+  padding: 2rem;
+}
+
+@media (min-width: 480px) {
+  .container-guide .guide {
+    margin-left: auto;
+    margin-right: auto;
+    width: 25rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .container-guide .guide {
+    width: 43rem;
+  }
+}
+
+.container-guide .guide h1 {
+  font-size: 1.5rem;
+}
+
+.container-guide .guide h1:not(:first-child) {
+  margin-top: 2rem;
+}
+
+.container-guide .guide h2 {
+  font-size: 1.2rem;
+  margin-top: 0.8rem;
+}
+
+.container-guide .guide p {
+  margin-top: 0.8rem;
+}
+
+.container-guide .guide p a {
+  color: #222222;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.container-guide .guide p a:hover {
+  color: #555555;
+}
+
+.container-guide .guide p em {
+  color: #555555;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.container-guide .guide ul {
+  margin: 0.8rem 2rem 0 2rem;
+}
+
+.container-guide .guide ul li {
+  margin-bottom: 0.5rem;
+}
