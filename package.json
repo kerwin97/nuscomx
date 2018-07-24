@@ -1,0 +1,11 @@
+{
+  "name": "nuscomx",
+  "version": "1.0.0",
+  "description": "Official site for NUS Students' Computing Club",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nuscomputingdev/nuscomx"
+  },
+  "author": "Eugene Lim",
+  "license": "MIT"
+}
