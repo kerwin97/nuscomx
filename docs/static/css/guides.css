@@ -1,0 +1,79 @@
+.container-guides .guide {
+  align-items: center;
+  background-color: #ffffff;
+  color: #000000;
+  display: flex;
+  flex-direction: column-reverse;
+  margin-bottom: 1rem;
+}
+
+@media (min-width: 480px) {
+  .container-guides .guide {
+    margin-left: auto;
+    margin-right: auto;
+    width: 25rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .container-guides .guide {
+    align-items: flex-end;
+    flex-direction: row-reverse;
+    width: 43rem;
+  }
+}
+
+.container-guides .guide img {
+  height: 10rem;
+  margin: 0 2rem;
+  object-fit: cover;
+  object-position: top center;
+  width: 15rem;
+}
+
+@media (min-width: 768px) {
+  .container-guides .guide img {
+    height: 12rem;
+    width: 15rem;
+  }
+}
+
+.container-guides .guide .contents {
+  flex-grow: 1;
+  padding: 2rem;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .container-guides .guide .contents {
+    margin-bottom: 0;
+    min-height: 20rem;
+    text-align: left;
+    width: 5rem;
+  }
+}
+
+.container-guides .guide .contents h1 a {
+  color: #000000;
+  display: block;
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  text-decoration: none;
+}
+
+.container-guides .guide .contents h1 a:hover {
+  color: #555555;
+  text-decoration: underline;
+}
+
+.container-guides .guide .contents p a {
+  color: #222222;
+  display: block;
+  margin-top: 0.3rem;
+  text-decoration: none;
+}
+
+.container-guides .guide .contents p a:hover {
+  color: #555555;
+  text-decoration: underline;
+}
