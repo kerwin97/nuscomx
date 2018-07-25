@@ -21,6 +21,7 @@
   display: block;
   height: 10rem;
   object-fit: cover;
+  width: 15rem;
 }
 
 .container-events .event .description {
