@@ -1,0 +1,63 @@
+extends ../templates/base.pug
+
+block head
+  link(rel="stylesheet", href=`${baseUrl}/static/css/sports.css`)
+
+block main
+  .heading
+    h1 Sports
+    p.
+      Listed here are guides, links to various platforms and FAQs which will be useful at different
+      stages of your undergraduate life. Feel free to explore!
+  .container-sports
+    .sports
+      img(src=`${baseUrl}/static/images/guides/academics.svg`, alt="")
+      .contents
+        h1: a(href=`${baseUrl}/guides/academics.html`).
+          Links of Interest Groups
+        p: a(href=`${baseUrl}/guides/academics.html#programme-structure`).
+          Programme Structure
+        p: a(href=`${baseUrl}/guides/academics.html#su-options`).
+          S/U Options
+        p: a(href=`${baseUrl}/guides/academics.html#past-year-exam-papers`).
+          Past Year Exam Papers
+    .sports
+      img(src=`${baseUrl}/static/images/guides/platforms.svg`, alt="")
+      .contents
+        h1: a(href=`${baseUrl}/guides/platforms.html`).
+          IFG
+        p: a(href=`${baseUrl}/guides/platforms.html#nus-email`).
+          NUS Email
+        p: a(href=`${baseUrl}/guides/platforms.html#myisis`).
+          myISIS
+        p: a(href=`${baseUrl}/guides/platforms.html#cors`).
+          CORS
+        p: a(href=`${baseUrl}/guides/platforms.html#ivle`).
+          IVLE
+        p: a(href=`${baseUrl}/guides/platforms.html#nusmods`).
+          NUSMods
+        p: a(href=`${baseUrl}/guides/platforms.html#nusync`).
+          NUSync
+        p: a(href=`${baseUrl}/guides/platforms.html#facilities-booking`).
+          Facilities Booking
+    .sports
+      img(src=`${baseUrl}/static/images/guides/special_programmes.svg`, alt="")
+      .contents
+        h1: a(href=`${baseUrl}/guides/special_programmes.html`).
+          Events
+        p: a(href=`${baseUrl}/guides/special_programmes.html#special-programmes`).
+          Special Programmes
+        p: a(href=`${baseUrl}/guides/special_programmes.html#double-degree-programme-faqs`).
+          Double Degree Programme FAQ
+
+    .sports
+      img(src=`${baseUrl}/static/images/guides/overseas_opportunities.svg`, alt="")
+      .contents
+        h1: a(href=`${baseUrl}/guides/overseas_opportunities.html`).
+          Photos
+        p: a(href=`${baseUrl}/guides/overseas_opportunities.html#nus-overseas-colleges`).
+          NUS Overseas Colleges
+        p: a(href=`${baseUrl}/guides/overseas_opportunities.html#student-exchange-programmes`).
+          Student Exchange Programmes
+        p: a(href=`${baseUrl}/guides/overseas_opportunities.html#summer-and-winter-programmes`).
+          Summer and Winter Programmes
