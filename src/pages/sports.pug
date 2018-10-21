@@ -1,0 +1,31 @@
+extends ../templates/base.pug
+
+block head
+  link(rel="stylesheet", href=`${baseUrl}/static/css/sports.css`)
+
+block main
+  .heading
+    h1 Sports
+    p.
+      Listed here are guides, links to various platforms and FAQs which will be useful at different
+      stages of your undergraduate life. Feel free to explore!
+  .container-sports
+    .sports
+      img(src=`${baseUrl}/static/images/guides/academics.svg`, alt="")
+      .contents
+        h1 Links of Interest Groups
+
+    .sports
+      img(src=`${baseUrl}/static/images/guides/platforms.svg`, alt="")
+      .contents
+        h1 IFG
+        
+    .sports
+      img(src=`${baseUrl}/static/images/guides/special_programmes.svg`, alt="")
+      .contents
+        h1 Events
+
+    .sports
+      img(src=`${baseUrl}/static/images/guides/overseas_opportunities.svg`, alt="")
+      .contents
+        h1 Photos
