@@ -12,6 +12,7 @@ function verifyCaptcha(response) {
     xhttp.onreadystatechange = function() {
         if (this.readyState == 4 && this.status == 200) {
         	document.body.innerHTML = "<a href='" + this.responseText + "'>Click here if you are not redirected</a>";
+        	alert("You will be redirected shortly!");
             window.location.href(this.responseText);
         }
     };
