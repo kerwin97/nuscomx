@@ -2,7 +2,8 @@ extends ../templates/base.pug
 
 block head
   link(rel="stylesheet", href=`${baseUrl}/static/css/sports.css`)
-
+  script(src="https://www.google.com/recaptcha/api.js")
+  script(src=`${baseUrl}/static/js/sports.js`)
 block main
   .heading
     h1 Sports
@@ -19,7 +20,8 @@ block main
       img(src=`${baseUrl}/static/images/guides/platforms.svg`, alt="")
       .contents
         h1 IFG
-        a(href=`https://t.me/joinchat/B3E-hEkbW8Q38-y36mCB7w`) Badminton
+        a(class=`captcha`, href=`#`) Badminton
+          span(data-name=`badminton`)
         br
         a(href=`http://t.me/ComputingIFGbball`) Basketball (M)
         br
