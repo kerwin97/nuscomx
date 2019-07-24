@@ -2,7 +2,7 @@ extends ../templates/base.pug
 
 block head
   link(rel="stylesheet", href=`${baseUrl}/static/css/sports.css`)
-  script(src="https://www.google.com/recaptcha/api.js")
+  script(src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit")
   script(src=`${baseUrl}/static/js/sports.js`)
 block main
   .heading
@@ -20,54 +20,78 @@ block main
       img(src=`${baseUrl}/static/images/guides/platforms.svg`, alt="")
       .contents
         h1 IFG
+        
         a(class=`captcha`, href=`#`) Badminton
           span(data-name=`badminton`)
         br
-        a(href=`http://t.me/ComputingIFGbball`) Basketball (M)
+        a(class=`captcha`, href=`#`) Basketball (M)
+          span(data-name=`basketballm`)
         br
-        a(href=`https://t.me/ComputingIFGBasketballG`) Basketball (F)
+        a(class=`captcha`, href=`#`) Basketball (F)
+          span(data-name=`basketballf`)
         br
-        a(href=`https://chat.whatsapp.com/JoMZEuUDd6072Lq8wwvl4d`) Contract Bridge
+        a(class=`captcha`, href=`#`) Contract Bridge
+          span(data-name=`bridge`)
         br
-        a(href=`https://t.me/joinchat/BJwxQxWUufqgLSm5M1RtUA`) Dodgeball
+        a(class=`captcha`, href=`#`) Dodgeball
+          span(data-name=`dodgeball`)
         br
-        a(href=`https://t.me/joinchat/B3E-hBZdpggiaNgv4Uq1KA`) DoTA 2
+        a(class=`captcha`, href=`#`) DoTA 2
+          span(data-name=`dota2`)
         br
-        a(href=`https://t.me/joinchat/FirWrQ0nHH-ryTaxDcbNLw`) Floorball (M)
+        a(class=`captcha`, href=`#`) Floorball (M)
+          span(data-name=`floorballm`)
         br
-        a(href=`https://t.me/joinchat/B3E-hBSCdtGDqtOjJ24gvQ`) Floorball (F)
+        a(class=`captcha`, href=`#`) Floorball (F)
+          span(data-name=`floorballf`)
         br
-        a(href=`https://t.me/joinchat/B3E-hBWl-gQhiY7FQV1gnQ`) Handball (M)
+        a(class=`captcha`, href=`#`) Handball (M)
+          span(data-name=`handballm`)
         br
-        a(href=`https://t.me/joinchat/B3E-hFPqFMwf8N-jzfOWJg`) Handball (F)
+        a(class=`captcha`, href=`#`) Handball (F)
+          span(data-name=`handballf`)
         br
-        a(href=`https://t.me/joinchat/B3E-hBUHqH8q0xKyIr-DtQ`) Chess
+        a(class=`captcha`, href=`#`) Chess
+          span(data-name=`chess`)
         br
-        a(href=`https://chat.whatsapp.com/FeMz9ZNSKSv7EqzazHFrc0`) Netball
+        a(class=`captcha`, href=`#`) Netball
+          span(data-name=`netball`)
         br
-        a(href=`https://t.me/joinchat/DKaBrknyIqC-kXvZ6YE8Lg`) Reversi
+        a(class=`captcha`, href=`#`) Reversi
+          span(data-name=`reversi`)
         br
-        a(href=`https://chat.whatsapp.com/8B7vecLLRtyDspPuQBJyBL`) Soccer (M)
+        a(class=`captcha`, href=`#`) Soccer (M)
+          span(data-name=`soccerm`)
         br
-        a(href=`https://t.me/joinchat/DrVlvxdQn2adRdN7VXxerQ`) Soccer (F)
+        a(class=`captcha`, href=`#`) Soccer (F)
+          span(data-name=`soccerf`)
         br
-        a(href=`https://t.me/joinchat/C5TC3heHxfxLGgmPUauoxg`) Table Tennis
+        a(class=`captcha`, href=`#`) Table Tennis
+          span(data-name=`tabletennis`)
         br
-        a(href=`https://chat.whatsapp.com/CPUlxGEpKLVL99aY1a9hW0`) Tchoukball
+        a(class=`captcha`, href=`#`) Tchoukball
+          span(data-name=`tchoukball`)
         br
-        a(href=`https://t.me/joinchat/B3E-hEmje3RBZ1g6HLm_MQ`) Tennis
+        a(class=`captcha`, href=`#`) Tennis
+          span(data-name=`tennis`)
         br
-        a(href=`https://t.me/joinchat/B3E-hBZxVAaRmzWRn0Q-6A`) Touch Rugby
+        a(class=`captcha`, href=`#`) Touch Rugby
+          span(data-name=`touchrugby`)
         br
-        a(href=`https://t.me/joinchat/F_vzt0adfF65M5fbB5xQgg`) Track (M)
+        a(class=`captcha`, href=`#`) Track (M)
+          span(data-name=`trackm`)
         br
-        a(href=`https://t.me/joinchat/F_vzt0adfF65M5fbB5xQgg`) Track (F)
+        a(class=`captcha`, href=`#`) Track (F)
+          span(data-name=`trackf`)
         br
-        a(href=`https://t.me/joinchat/DKaBrkdeVYHyBV80OM2KQw`) Ultimate Frisbee
+        a(class=`captcha`, href=`#`) Ultimate Frisbee
+          span(data-name=`frisbee`)
         br
-        a(href=`https://t.me/joinchat/Goi6ChS6g_zV2X1--lhTWg`) Volleyball (M)
+        a(class=`captcha`, href=`#`) Volleyball (M)
+          span(data-name=`volleyballm`)
         br
-        a(href=`https://t.me/joinchat/Goi6ChS6g_zV2X1--lhTWg`) Volleyball (F)
+        a(class=`captcha`, href=`#`) Volleyball (F)
+          span(data-name=`volleyballf`)
         br
         br
         br
@@ -128,12 +152,15 @@ block main
       .contents
         h1 Photos
         br
-        a(href=`https://www.flickr.com/photos/137141057@N04/albums/72157690115522353`) Night Cycling
+        
+        a(class=`captcha`, href=`#`) Night Cycling
         br
         br
-        a(href=`https://www.flickr.com/photos/137141057@N04/albums/72157705709321465`) Sports Carnival
+        
+        a(class=`captcha`, href=`#`) Sports Carnival
         br
         br
-        a(href=`https://www.flickr.com/photos/137141057@N04/albums/72157697182251462`) IFG 18
+        
+        a(class=`captcha`, href=`#`) IFG 18
         br
         br
